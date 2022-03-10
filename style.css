@@ -1,0 +1,357 @@
+/* Обнуляющий стиль */
+*{
+  padding: 0;
+	margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{
+  outline: none;
+}
+a:focus,:active{
+	outline: none;
+}
+nav, footer, header, aside{
+  display: block;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{
+	font-family: inherit;
+}
+input:: -ms-clear{
+	display: none;
+}
+button{
+	cursor: pointer;
+}
+button:: -moz-focus-inner{
+	padding: 0;
+	border: 0;
+}
+a,a:visited{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul li{
+	list-style: none;
+}
+img{
+	vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/* Шрифты */
+
+@font-face {
+	font-family: "Barlow-Regular";
+	src: url("../fonts/Barlow-Regular.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Barlow-Regular";
+	src: url("../fonts/Barlow-Bold.otf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+  font-family: "Barlow-Black";
+	src: url("../fonts/Barlow-Black.otf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+	font-family: "BarlowCondensed";
+	src: url("../fonts/BarlowCondensed-Medium.otf") format("truetype");
+	font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+	font-family: "BarlowCondensed";
+	src: url("../fonts/BarlowCondensed-Regular.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+	font-family: "Barlow";
+	src: url("../fonts/Barlow-Medium.otf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
+
+/Основные блоки страницы
+
+.wrapper{
+	padding: 75px 50px;
+	font-family: "Barlow-Regular";
+	color: #2A4A5C;
+	background-color: #EFF6FF;
+	margin: 0px auto;
+	max-width: 1600px;
+}
+.content{
+	display: grid;
+	margin: 0px auto;
+}
+.bunner{
+	grid-area: "bunner";
+}
+
+/* registration-form */
+
+.registration-form{
+	grid-area: "form";
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 75px 50px;
+}
+.registration-form__text{
+	display: flex;
+	font-family: "Barlow";
+	font-weight: 500;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+.registration-form__main-title{
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.registration-form__subtitle{
+	color: #7B8A92;
+}
+.registration-form__subtitle_1{
+	font-size: 16px;
+}
+.registration-form__subtitle_2{
+	font-size: 14px;
+}
+.registration-form__registration-buttons{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+.registration-form__button{
+	width: 200px;
+	height: 35px;
+	color:  white;
+	display: flex;
+	align-items: center;
+}
+.registration-form__icon{
+	width: 20px;
+	height: 20px;
+	margin: 0px 10px 0px 10px;
+}
+.registration-form__separator{
+  margin-bottom: 50px;
+}
+.registration-form__button:hover{
+	opacity: 0.9;
+}
+.registration-form__user-info{
+	margin-bottom: 50px;
+}
+.registration-form__title{
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+.registration-form__user-choice{
+	margin-bottom: 25px;
+}
+.registration-form__help-window{
+	margin-bottom: 50px;
+}
+.registration-form__agreement{
+	margin-bottom: 50px;
+}
+.user-info{
+	display: flex;
+	justify-content: space-between;
+}
+.button_1{
+	background-color: #255A9B;
+	margin-right: 20px;
+}
+.button_2{
+	background-color: #0076B6;
+}
+.button_3{
+	background-color: #3698FB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+}
+
+/* separator */
+
+.separator{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20px;
+}
+.separator__line{
+	height: 1px;
+	background-color: #EEEEEE;
+	width: 100px;
+}
+.separator__text{
+	margin: 0px 10px;
+}
+
+/* user-attribute */
+
+.user-attribute{
+	position: relative;
+}
+.user-attribute__field{
+	border: 1px solid #EEEEEE;
+	width: 200px;
+	height: 50px;
+	padding: 25px 5px 5px 5px;
+  display: flex;
+	align-items: flex-end;
+}
+.user-attribute__field:focus{
+	box-shadow: -2px -2px 6px 2px #3698FB, 2px 2px 6px 2px #3698FB;
+}
+.user-attribute__title{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.user-attribute__field-title{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	color: #96A5B1;
+}
+
+/* user-choice */
+
+.user-choice{
+	display: flex;
+	justify-content: space-between;
+}
+.user-choice__item{
+	display: flex;
+}
+.user-choice__text{
+	position: relative;
+}
+.user-choice__text::after{
+	content: "i";
+	color: #96A5B1;
+	border: 1px solid #96A5B1;
+	border-radius: 50%;
+	font-size: 8px;
+	width: 8px;
+	height: 8px;
+	padding: 0px 4px;
+  margin-left: 8px;
+}
+.user-choice__text::after:hover{
+	background-color: #EEEEEE;
+}
+.user-choice__radio{
+	margin-right: 10px;
+}
+
+/* help-window */
+
+.help-window{
+	border: 1px solid #EEEEEE;
+	width: 250px;
+	padding: 10px;
+	box-shadow: -3px 3px 10px #EEEEEE, 3px 3px 10px #EEEEEE;
+}
+.help-window__text{
+	color: #96A5B1;
+}
+
+/* agreement */
+
+.agreement{
+	display: flex;
+}
+.agreement__check{
+	margin-right: 10px;
+}
+.agreement__text{
+	color: #96A5B1;
+}
+.agreement__link{
+	color: #3698FB;
+	text-decoration: underline;
+}
+
+/* Прочее */
+
+#field-1{
+	border-left: 1px solid #3698FB;
+}
+
+/* media */
+
+@media(min-width: 1400px){
+	.content{
+		grid-template-areas: "bunner form";
+		grid-template: 1fr / 1fr 1fr;
+	}
+}
+@media(max-width: 1400px){
+	.content{
+		grid-template-areas: "bunner" "form";
+		grid-template: 1fr auto / minmax(320px, 759px);
+		max-width: 759px;
+	}
+	.bunner{
+		margin: 0px auto;
+		max-width: 100%;
+	}
+}
+@media(max-width: 650px){
+	.registration-form__user-choice{
+		flex-wrap: wrap;
+	}
+	.registration-form__user-info{
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.registration-form__registration-buttons{
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.registration-form__button{
+		margin: 0px 0px 10px 0px;
+	}
+	.user-attribute__field{
+		margin: 0px 0px 10px 0px;
+	}
+	.user-choice__item{
+		margin: 0px 10px 10px 0px;
+  }
+}
