@@ -176,6 +176,9 @@ h1,h2,h3,h4,h5,h6{
   margin-bottom: 50px;
 }
 .registration-form__title{
+  color: #2A4A66;
+  font-family: "Barlow-Regular";
+  font-weight: bold;
   font-size: 22px;
   margin-bottom: 10px;
 }
