@@ -104,8 +104,8 @@ div,article,section,fieldset{
 /Основные блоки страницы
 
 .wrapper{
-  padding: 75px 50px;
   font-family: "Barlow-Regular";
+  padding: 75px 50px;
   color: #2A4A5C;
   background-color: #EFF6FF;
   margin: 0px auto;
@@ -136,6 +136,8 @@ div,article,section,fieldset{
   margin-bottom: 50px;
 }
 .registration-form__main-title{
+  color: #2A4A5C;
+  font-family: "Barlow-Regular";
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 10px;
