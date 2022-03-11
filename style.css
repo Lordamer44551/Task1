@@ -59,42 +59,44 @@ h1,h2,h3,h4,h5,h6{
   font-size: inherit;
   font-weight: 400;
 }
-
+div,article,section,fieldset{
+  color: inherit;
+}
 /* Шрифты */
 
 @font-face {
   font-family: "Barlow-Regular";
-  src: url("../fonts/Barlow-Regular.otf") format("truetype");
+  src: url("./fonts/Barlow-Regular.otf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "Barlow-Regular";
-  src: url("../fonts/Barlow-Bold.otf") format("truetype");
+  src: url("./fonts/Barlow-Bold.otf") format("truetype");
   font-style: normal;
   font-weight: bold;
 }
 @font-face {
   font-family: "Barlow-Black";
-  src: url("../fonts/Barlow-Black.otf") format("truetype");
+  src: url("./fonts/Barlow-Black.otf") format("truetype");
   font-style: normal;
   font-weight: bold;
 }
 @font-face {
   font-family: "BarlowCondensed";
-  src: url("../fonts/BarlowCondensed-Medium.otf") format("truetype");
+  src: url("./fonts/BarlowCondensed-Medium.otf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "BarlowCondensed";
-  src: url("../fonts/BarlowCondensed-Regular.otf") format("truetype");
+  src: url("./fonts/BarlowCondensed-Regular.otf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face{
   font-family: "Barlow";
-  src: url("../fonts/Barlow-Medium.otf") format("truetype");
+  src: url("./fonts/Barlow-Medium.otf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
